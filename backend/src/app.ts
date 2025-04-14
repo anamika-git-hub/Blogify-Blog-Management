@@ -8,7 +8,7 @@ import blogRoutes from './routes/blogRoutes';
 const app = express();
 
 mongoose
-  .connect(config.mongoURI)
+  .connect(config.mongoURI as string)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
