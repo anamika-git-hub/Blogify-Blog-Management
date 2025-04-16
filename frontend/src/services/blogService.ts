@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Blog, ApiResponse } from '../types';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api/blogs';
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/blogs` || 'http://localhost:5000/api/blogs';
 
 // Set up axios with token
 const setAuthToken = (token: string | null) => {
